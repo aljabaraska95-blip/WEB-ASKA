@@ -1,0 +1,61 @@
+/* === IMPORT FONT === */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap');
+
+/* === TEKS DASAR === */
+body {
+  font-family: "Inter", sans-serif;
+  color: #e0e0e0;
+  letter-spacing: 0.3px;
+}
+
+/* === JUDUL BESAR === */
+h1, h2 {
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(30, 59, 138, 0.5), 0 0 25px rgba(10, 25, 47, 0.6);
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+/* Efek glow lembut (berdenyut pelan) */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(30, 59, 138, 0.4), 0 0 20px rgba(10, 25, 47, 0.4);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(30, 59, 138, 0.8), 0 0 40px rgba(10, 25, 47, 0.8);
+  }
+}
+
+/* === TEKS DESKRIPSI === */
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.05rem;
+  color: #d0d0d0;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 950px;
+  margin: 20px auto;
+  opacity: 0.95;
+}
+
+/* === TEKS KHUSUS DI BAGIAN GRADIENT === */
+.teks-beluga p {
+  color: #d8e0ff;
+  text-shadow: 0 0 8px rgba(30, 59, 138, 0.4);
+}
+
+/* === ANIMASI MASUK === */
+@keyframes fadeInText {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+h1, p {
+  animation: fadeInText 1.5s ease forwards;
+}
+.ARMADA {
+  min-height: 100vh;
+  width: 100%;
+  
+}

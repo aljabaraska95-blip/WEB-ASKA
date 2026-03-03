@@ -1,0 +1,65 @@
+/* === RESET DASAR === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* === BODY === */
+body {
+  font-family: Arial, sans-serif;
+  background: #292929;
+  color: white;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideInTop {
+  from  { transform: translateY(100%);
+  opacity: 0;}}
+  to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+ .utama {
+  background: 
+    linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("ChatGPT\ Image\ 23\ Okt\ 2025\,\ 07.18.51.png") center/cover no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  padding: 60px 80px;      
+  gap: 50px;
+  color: white;
+  display: flex;
+  justify-content: space-between;   /* tengah horizontal */
+  padding-bottom: 10px;      /* jarak sedikit dari bawah */
+}
+.utama .final  {
+  flex: 1;
+  max-width: 600px;
+  animation: slideInLeft 1s ease-out forwards;
+}
+.utama .final h1 { 
+  margin-left: 50px;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+}
